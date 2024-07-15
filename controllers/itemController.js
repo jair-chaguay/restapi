@@ -56,7 +56,7 @@ exports.getAllItems = async (req, res) => {
 
 exports.getItem = async(req, res) =>{
 
-  /* 
+   /* 
      #swagger.tags = ['Items']
      #swagger.description = 'Get an item entry'
      #swagger.summary = 'Get an item entry'
@@ -94,25 +94,6 @@ exports.getItem = async(req, res) =>{
 exports.updateItem= async(req, res) =>{
 
 
-  /* 
-     #swagger.tags = ['Items']
-     #swagger.description = 'Get an item entry'
-     #swagger.summary = 'Get an item entry'
-     #swagger.parameters['id'] = {
-         description: 'Item id',
-         required: true,
-     }
-     #swagger.responses[404] = {
-         description: 'Item not found',
-     }
-     #swagger.responses[400] = {
-         description: 'Bad request',
-     }
-     #swagger.responses[200] = {
-         description: 'Get an item by id',
-     }
-   */
-
   try{
     const itemId=re.params.id;
     const data = req.body;
@@ -125,27 +106,6 @@ exports.updateItem= async(req, res) =>{
 }
 
 exports.deleteItem = async(req, res) => {
-
-
-  /* 
-     #swagger.tags = ['Items']
-     #swagger.description = 'Get an item entry'
-     #swagger.summary = 'Get an item entry'
-     #swagger.parameters['id'] = {
-         description: 'Item id',
-         required: true,
-     }
-     #swagger.responses[404] = {
-         description: 'Item not found',
-     }
-     #swagger.responses[400] = {
-         description: 'Bad request',
-     }
-     #swagger.responses[200] = {
-         description: 'Get an item by id',
-     }
-   */
-
 
   try{
     const itemId= re.params.id;
