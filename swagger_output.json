@@ -84,56 +84,37 @@
         }
       },
       "put": {
-        "tags": [
-          "Items"
-        ],
-        "summary": "Get an item entry",
-        "description": "Get an item entry",
+        "description": "",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string",
-            "description": "Item id"
+            "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "Get an item by id"
+            "description": "OK"
           },
           "400": {
-            "description": "Bad request"
-          },
-          "404": {
-            "description": "Item not found"
+            "description": "Bad Request"
           }
         }
       },
       "delete": {
-        "tags": [
-          "Items"
-        ],
-        "summary": "Get an item entry",
-        "description": "Get an item entry",
+        "description": "",
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string",
-            "description": "Item id"
+            "type": "string"
           }
         ],
         "responses": {
-          "200": {
-            "description": "Get an item by id"
-          },
           "400": {
-            "description": "Bad request"
-          },
-          "404": {
-            "description": "Item not found"
+            "description": "Bad Request"
           }
         }
       }
